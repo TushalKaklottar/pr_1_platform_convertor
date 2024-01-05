@@ -103,7 +103,7 @@ class _ChatComponentState extends State<ChatComponent> {
                 .chatConversation[i],
           ),
         )
-    ) : Center(
+    ) : const Center(
       child: Text("No any chat yet..."),
     )
         :CupertinoListSection(
@@ -115,7 +115,7 @@ class _ChatComponentState extends State<ChatComponent> {
                 .fullName
                 .length,
                 (i) => CupertinoListTile(
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       horizontal: 8,
                     ),
                     leadingToTitle: 5,

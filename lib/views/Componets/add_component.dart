@@ -362,18 +362,18 @@ class _AddComponentState extends State<AddComponent> {
                 },
                 child: Row(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 25),
+                    const Padding(
+                      padding: EdgeInsets.only(left: 25),
                       child: Icon(
                        CupertinoIcons.calendar,
                         size: 30,
                       ),
                     ),
-                    SizedBox(width: 18),
+                    const SizedBox(width: 18),
                     (pickedDate != null)
                     ? Text("${initialDate.day} - ${initialDate.month} - ${initialDate.year}"
                     )
-                        : Text("Pick Date",
+                        : const Text("Pick Date",
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 16
@@ -382,7 +382,7 @@ class _AddComponentState extends State<AddComponent> {
                   ],
                 ),
               ),
-              SizedBox(height: 15),
+              const SizedBox(height: 15),
               GestureDetector(
                 onTap: () {
                   showCupertinoModalPopup(
@@ -407,13 +407,13 @@ class _AddComponentState extends State<AddComponent> {
                 },
                 child: Row(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 25),
+                    const Padding(
+                      padding: EdgeInsets.only(left: 25),
                       child: Icon(CupertinoIcons.time,
                         size: 30,
                       ),
                     ),
-                    SizedBox(width: 18),
+                    const SizedBox(width: 18),
                     (pickedTime != null) 
                       ? (periodName == 'am')
                         ? Text("${initialTime.hour} : ${initialTime.minute}  $periodName",
@@ -421,7 +421,7 @@ class _AddComponentState extends State<AddComponent> {
                         :(initialTime.hour > 12)
                         ? Text("${initialTime.hour - 12} : ${initialTime.minute}  $periodName")
                         :Text("${initialTime.hour} :${initialTime.minute}  $periodName")
-                        :Text("Pick Time",
+                        :const Text("Pick Time",
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.grey
@@ -430,10 +430,10 @@ class _AddComponentState extends State<AddComponent> {
                   ],
                 ),
               ),
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
               CupertinoButton(
                 color: Colors.blue,
-                  child: Text("SAVE"),
+                  child: const Text("SAVE"),
                 onPressed: () { },
               )
             ],

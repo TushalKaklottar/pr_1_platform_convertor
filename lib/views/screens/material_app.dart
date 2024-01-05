@@ -56,7 +56,7 @@ class _materialAppState extends State<materialApp> {
             initialIndex = val;
             pageController.animateToPage(
                 initialIndex,
-                duration: Duration(milliseconds: 800), curve: Curves.easeInOut);
+                duration: const Duration(milliseconds: 800), curve: Curves.easeInOut);
           });
         },
         selectedItemColor: Colors.black,

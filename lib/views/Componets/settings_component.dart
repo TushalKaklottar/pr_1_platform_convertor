@@ -133,7 +133,7 @@ class _SettingsComponentState extends State<SettingsComponent> {
         CupertinoListTile(
           leading: const Icon(Icons.person),
           title: const Text("Profile"),
-          subtitle: Text("Update Profile Data"),
+          subtitle: const Text("Update Profile Data"),
       trailing: CupertinoSwitch(
         value: (Provider.of<ProfileProvider>(context)
             .profileModal
